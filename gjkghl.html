@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aollo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="main.js"></script>
+</head>
+<style>
+/* Style the buttons */
+.ali {
+  border: none;
+  outline: none;
+  /* padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer; */
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .ali:hover {
+  color: blue;
+}
+</style>
+
+<body>
+    <div class="menu" id="myDIV">
+       <li><a href="#Home" class="ali active"> Home</a></li>
+       <li><a href="#Our Services" class="ali"> Our Services</a></li>
+       <li><a href="#About Us" class="ali">About Us</a></li>
+       <li><a href="#Our Client" class="ali">Our Client</a></li>
+       <li><a href="#Contact Us" class="ali">Contact Us</a></li>
+    </div>
+    <div class="on">
+        <button onclick="DarkMode()" class="mode">Dark</button>
+    </div>
+    <div class="on1">
+        <button class="do"><a href="#footer-i">request a demo</a></button>
+    </div>
+
+
+
+
+
+    
+    
+    
+    
+
+       
+<script>
+    var btnContainer = document.getElementById("myDIV");
+    
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("ali");
+    
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+</script>  
+</body>
+</html>
+
+
+<!-- // Get the container element
+var btnContainer = document.getElementById("myDIV");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+} -->

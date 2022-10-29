@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aollo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+
+        <div class="logo"><a href="#Home"><h1>Ao<span>ll</span>o</h1></a></div>
+
+        <ul class="nav-links">
+
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div>
+            
+          </div>
+          <div class="menu"id="myDIV">
+            <li><a href="#Home" class="ali active">Home</a></li>
+            <li><a href="#Our Services"class="ali">Our Services</a></li>
+            </li>
+            <li><a href="#About Us"class="ali">About Us</a></li>
+            <li><a href="#Our Client"class="ali">Our Client</a></li>
+            <li><a href="#Contact Us"class="ali">Contact Us</a></li>
+            <div class="on">
+                <button onclick="DarkMode()" class="mode" >Dark</button>
+            </div>
+            <div class="on1">
+                <button class="do"><a href="#footer-i"><h5>request a demo</h5></a></button>
+            </div>
+        
+          </div>
+        </ul>
+      </nav>
+      
+    <section class="sec1" id="Home">
+        <div class="web-design">
+            <h1>Web & <br> Mobile Design <br> Development</h1>
+            <p class="pa">Help you to design what you need</p>
+           <div class="part">
+            <button class="btn"><a href="#Contact Us"><h3>Try Free Demo <span>></span></h3></a></button> 
+            <p class="par">- Web &IOS and Android</p>
+           </div>
+        </div>
+        <div class="imgs">
+            <img src="human-removebg-preview.png" alt="" class="human">
+            <img src="back.jpg" alt="" class="back">
+        </div>
+        <div class="emoji">
+            <span>&#128525;</span>
+            <h5>100+</h5>
+        </div>
+        <p class="p5" id="Our Services">Happy clients</p>
+    </section>
+        <div class="our">
+            <h1>our <span>Services</span></h1>
+        </div>
+    <section class="ui">
+        <div class="ux">
+            <img src="ui.png" alt="">
+            <h1>Ui/Ux Design</h1>
+            <p>illustrations, and graphic <br> elements from the <br> best designers</p>
+        </div>
+        <div class="mobil">
+            <img src="mobil.png" alt="">
+            <h1>mobil design</h1>
+            <p>Design Mobile Application <br> by using flutter ,Kolten<br> and IOS</p>
+         </div>
+        <div class="web">
+            <img src="web design.png" alt="">
+            <h1>website design</h1>
+            <p>illustrations, and graphic <br> elements from the <br> best designers</p>
+        </div>
+        <div class="app">
+            <img src="web app.png" alt="">
+            <h1>web app design</h1>
+            <p>illustrations, and graphic <br> elements from the <br> best designers</p>
+        </div>
+    </section>
+    <div class="Contact">
+        <button class="us"><a href="#Contact Us"  id="About Us"><h1>Contact Us</h1></a></button> 
+
+    </div>
+        <div class="About2" >
+            <h1><span>About</span> Us</h1>
+        </div>
+    <section class="About">
+        <div class="we" >
+            <h1><span class="K">We</span> A Software House</h1>
+            <p>For Design Mob Apps,<br> Website , Webapp <br> and Ui/Ux</p>
+            <p><span id="dots"></span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatibus culpa. Ducimus cumque repellat asperiores perferendis doloribus nostrum rem dolore nam? Quos nesciunt quis illo sunt molestiae eum tempora earum?</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more <i class="fa-sharp fa-solid fa-caret-down"></i></button>
+        </div>
+        <div class="tv">
+            <img src="back.jpg" alt="" class="backgr">
+            <img src="tv10-removebg-preview.png" alt="" class="tv2">
+            <img src="people.jpg" alt="" class="people">
+        </div>
+    </section>
+     <div id="Our Client"></div>
+    <div class="Client">
+        <h1>Our <span >Client</span></h1>
+    </div>
+    
+    <section class="Client2">
+
+        <div class="icon">
+            <img src="icon-removebg-preview.png" alt="">
+        </div>
+        <div class="icon3">
+            <img src="samsung-logo-text-png-1-removebg-preview.png" alt="">
+        </div>
+
+        <div class="icon">
+            <img src="icon-removebg-preview.png" alt="">
+        </div>
+
+        <div class="icon3">
+            <img src="samsung-logo-text-png-1-removebg-preview.png" alt="" >
+        </div>
+    </section>
+    <div class="ContacU">
+        <div id="Contact Us"></div>
+        <h1><span>Contact</span> Us</h1>
+    </div>
+
+    <section class="ContacU2" >
+        <div class="tv3">
+            <img src="back.jpg" alt="" class="backgr1">
+            <img src="tv10-removebg-preview.png" alt="" class="tv4">
+            <img src="people.jpg" alt="" class="people1">
+        </div>
+        <form  action="#Home" onsubmit="return formdata()" novalidate>
+            <div class="error" id="error"></div>
+            <h1>Your Name</h1>
+            <input type="text"id="username" class="f1">
+            <h1>Your E-mail</h1>
+            <input type="email"id="email"class="f1">
+            <h1>Your Message</h1>
+            <input type="text"id="Message" class="Message">
+           <input type="submit" id="submit" class="submit" value="send">
+        </form> 
+    </section>
+
+    <footer>
+        <div class="Ao"  id="footer-i">
+            <div class="Aollo">
+                <a href="#Home"><h1>Aollo</h1></a>
+                <p>For Design Mob Apps, <br> Website , Webapp <br> and ui/ux</p>
+            </div>
+    
+            <div class="HOA">
+                <a href="#Home"><h1>Home</h1></a>
+                <a href="#Our Services"><h1>Our Service</h1></a>
+                <a href="#About Us"><h1>About Us</h1></a>
+            </div>
+    
+            <div class="OC">
+                <a href="#Our Client"><h1>Our Client</h1></a>
+                <a href="#Contact Us"><h1>Contact Us</h1></a>
+                <div class="insta">
+                    <a href="https://www.facebook.com/?stype=lo&jlou=AfesuQZuael6sxGmxox7DcKXv8gFCta7leMDVxc2_jfVlurw8YHv-SFNJTKeApqJHT0hsqOdu3NzgdB5rKtJGanA--3mFGOM9sJU-kwLjrkCtQ&smuh=11106&lh=Ac-mUmG1ze_Rz5bEc0k" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+     <div class="i-0">
+
+        <div class="i">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="phone">
+            <h1>90060030</h1>
+        </div>
+     </div>
+     <div class="right">
+        <p>Copyright @Allol 2022</p>
+    </div>
+    </footer>
+
+    <Script src="main.js"></Script>
+</body>
+</html>
